@@ -38,9 +38,7 @@ metadata:
   name: snake-game-ingress
   namespace: apps
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/backend-protocol: HTTP
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
   - host: copilotx-demo.westeurope.cloudapp.azure.com
@@ -53,7 +51,3 @@ spec:
             name: snake-game-service
             port:
               name: http
-  tls:
-  - hosts:
-    - copilotx-demo.westeurope.cloudapp.azure.com
-    # secretName: snake-game-tls
