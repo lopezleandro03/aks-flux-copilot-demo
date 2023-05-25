@@ -52,3 +52,7 @@ spec:
             name: snake-game-service
             port:
               name: http
+  tls:
+  - hosts:
+    - copilotx-demo.westeurope.cloudapp.azure.com
+    # secretName: snake-game-tls
