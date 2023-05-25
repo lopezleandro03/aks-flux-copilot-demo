@@ -52,4 +52,4 @@ spec:
           service:
             name: snake-game-service
             port:
-              name: https
+              name: http
